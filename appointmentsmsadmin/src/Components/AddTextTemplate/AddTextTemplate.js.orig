@@ -1,0 +1,195 @@
+import React, { Component } from 'react';
+import { Col, Button, Label, ButtonToolbar, Input } from 'reactstrap';
+import './AddTextTemplate.css';
+<<<<<<< HEAD
+import { CustomModal } from '../Modals/Modal';
+import {AddTagsModal} from '../TagsModal/AddTagsModal';
+=======
+import { Model } from '../Model/Model';
+>>>>>>> modal changes
+import Form from 'react-bootstrap/Form';
+import { FormattedMessage } from "react-intl";
+
+class AddTextTemplate extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { deps: [], addTagsModalShow: false, showPreview: false }
+  }
+  render() {
+    let TagsModalClose = () => this.setState({ addTagsModalShow: false })
+    let closPreview = () => this.setState({ showPreview: false })
+    return (
+      <Form>
+
+        <Form.Group>
+          <Form.Row>
+            <Label sm={2}>Ruleset Name : </Label>
+            <Col sm={4}>
+              <Form.Control as="select">
+                <option>Select Ruleset...</option>
+                <option>Ruleset 1</option>
+                <option>Ruleset 2</option>
+                <option>Ruleset 3</option>
+              </Form.Control>
+            </Col>
+          </Form.Row>
+        </Form.Group>
+        <Form.Group>
+          <Form.Row>
+            <Label sm={2}><FormattedMessage id="TextTemplate" defaultMessage="TextTemplate" /></Label>
+            <Col sm={4}>
+              <Input type="#" name="#" id="#" placeholder="Text Template Name" />
+            </Col>
+          </Form.Row>
+        </Form.Group>
+        <Form.Group>
+          <Form.Row>
+            <Label sm={2}>Department Name : </Label>
+            <Col sm={4}>
+              <Form.Control as="select">
+                <option>Select Department Name...</option>
+                <option>Department 1</option>
+                <option>Department 2</option>
+                <option>Department 3</option>
+              </Form.Control>
+            </Col>
+
+
+          </Form.Row>
+        </Form.Group>
+
+        <Form.Group>
+          <Form.Row>
+            <Label sm={2}>Outdoor patient department : </Label>
+            <Col sm={4}>
+              <Form.Control as="select">
+                <option>Select OPD here...</option>
+                <option>dept 1</option>
+                <option>dept 2</option>
+                <option>dept 3</option>
+              </Form.Control>
+            </Col>
+          </Form.Row>
+        </Form.Group>
+
+        <Form.Group>
+          <Form.Row>
+            <Label sm={2}> Section:</Label>
+            <Col sm={4}>
+              <Form.Control as="select">
+                <option>Select Section Name...</option>
+                <option>Section 1</option>
+                <option>Section 2</option>
+                <option>Section 3</option>
+              </Form.Control>
+            </Col>
+            <Label sm={2}>Ward :</Label>
+            <Form.Control as="select" className="col-md-3">
+              <option>Select ward Name...</option>
+              <option>ward 1</option>
+              <option>ward 2</option>
+              <option>ward 3</option>
+            </Form.Control>
+
+          </Form.Row>
+        </Form.Group>
+        <Form.Group>
+          <Form.Row>
+            <Label sm={2}>Location : </Label>
+            <Col sm={4}>
+              <Form.Control as="select">
+                <option>Select Location...</option>
+                <option>Location 1</option>
+                <option>Location 2</option>
+                <option>Location 3</option>
+              </Form.Control>
+            </Col>
+          </Form.Row>
+        </Form.Group>
+        <Form.Group><Form.Row>
+          <Label sm={2}>Official level of care : </Label>
+          <Col sm={4}><Form.Control as="select">
+            <option>Select level...</option>
+            <option>Daycare</option>
+          </Form.Control></Col>
+        </Form.Row></Form.Group>
+        <Form.Group><Form.Row>
+          <Label sm={2}>Contact Type : </Label>
+          <Col sm={4}><Form.Control as="select">
+            <option>Select Contact type...</option>
+            <option>Video calls</option>
+          </Form.Control></Col>
+        </Form.Row></Form.Group>
+        <Form.Group>
+          <Form.Row>
+            <Label sm={2}>Text Template :</Label>
+            <Col sm={4}>
+              <Form.Control as="textarea" rows="4" />
+            </Col>
+
+<<<<<<< HEAD
+            <Button className="bg-primary offset-1 " onClick={() => this.setState({ addTagsModalShow: true })}>
+              Add Tags
+          </Button>
+          <AddTagsModal 
+              show={this.state.addModalShow}
+              onHide={addModalClose}
+              />
+          </Form.Row>
+=======
+          <Button className="bg-primary offset-1 " onClick={()=> this.setState({addModalShow:true})}>
+            Add Tags
+          </Button>
+        </Form.Row>
+>>>>>>> modal changes
+        </Form.Group>
+
+
+
+        <ButtonToolbar>
+          <Form.Row>
+            <Button className="bg-primary offset-1 mb-2" onClick={() => this.setState({ showPreview: true })}>
+              Preview
+          </Button>
+<<<<<<< HEAD
+            <CustomModal style={{ color: 'red' }}
+              show={this.state.addTagsModalShow}
+              onHide={TagsModalClose}
+            />
+
+            <CustomModal
+              show={this.state.showPreview}
+              onHide={closPreview}
+            />
+          </Form.Row></ButtonToolbar>
+=======
+          <Model 
+              show={this.state.addModalShow}
+              onHide={addModalClose}
+              />
+        </Form.Row></ButtonToolbar>
+>>>>>>> modal changes
+        <Form.Group as={Col} controlId="#">
+          <Form.Row>
+            <Form.Check type="checkbox" label="Include Patient Self Service Link" />
+          </Form.Row>
+        </Form.Group>
+        <Form.Row>
+          <div className="col text-right view-report">
+            <Button className=" mr-4 col-md-1" variant="primary" type="submit">
+              Back
+          </Button>
+            <Button className="bg-primary  col-md-1 mr-4 " variant="primary" type="submit" >
+              Save As
+          </Button>
+            <Button className="bg-primary  col-md-1 mr-4 " variant="primary" type="submit" >
+              Save
+          </Button>
+          </div>
+        </Form.Row>
+      </Form>
+    );
+  }
+}
+
+export default AddTextTemplate;

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "h/SackMpLeif8rpMe00oTk6IRSYwOv3J5xdpw7YzjGzqU+a23FMb9oVurg4pjyD4wADbd32q/kyalQ+ktezwAw==",
+  "success": true,
+  "projectFilePath": "D:\\Repo\\AppointmentSMS-Service\\src\\WebAPI\\DataAccessHandler\\Server\\DIPS.AptSMS.ConfigClient.DataAccessHandler.Server\\DIPS.AptSMS.ConfigClient.DataAccessHandler.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anuka.S\\.nuget\\packages\\dips.infrastructure.logging\\1.0.8\\dips.infrastructure.logging.1.0.8.nupkg.sha512",
+    "C:\\Users\\Anuka.S\\.nuget\\packages\\microsoft.csharp\\4.4.0\\microsoft.csharp.4.4.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

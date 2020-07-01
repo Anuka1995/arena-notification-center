@@ -1,0 +1,7 @@
+D:\Repo\AppointmentSMS-Service\src\WebAPI\Common\Common\DIPS.AptSMS.ConfigClient.Common.TextTemplateService\bin\Debug\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.TextTemplateService.deps.json
+D:\Repo\AppointmentSMS-Service\src\WebAPI\Common\Common\DIPS.AptSMS.ConfigClient.Common.TextTemplateService\bin\Debug\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.TextTemplateService.dll
+D:\Repo\AppointmentSMS-Service\src\WebAPI\Common\Common\DIPS.AptSMS.ConfigClient.Common.TextTemplateService\bin\Debug\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.TextTemplateService.pdb
+D:\Repo\AppointmentSMS-Service\src\WebAPI\Common\Common\DIPS.AptSMS.ConfigClient.Common.TextTemplateService\bin\Debug\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.dll
+D:\Repo\AppointmentSMS-Service\src\WebAPI\Common\Common\DIPS.AptSMS.ConfigClient.Common.TextTemplateService\bin\Debug\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.dll
+D:\Repo\AppointmentSMS-Service\src\WebAPI\Common\Common\DIPS.AptSMS.ConfigClient.Common.TextTemplateService\bin\Debug\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.pdb
+D:\Repo\AppointmentSMS-Service\src\WebAPI\Common\Common\DIPS.AptSMS.ConfigClient.Common.TextTemplateService\bin\Debug\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.pdb

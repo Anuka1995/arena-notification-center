@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIPS.AptSMS.ConfigClient.DataAccessHandler.Common", "Common\DIPS.AptSMS.ConfigClient.DataAccessHandler.Common\DIPS.AptSMS.ConfigClient.DataAccessHandler.Common.csproj", "{A4E45B74-7ADE-453A-8C1F-D2914E33C812}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIPS.AptSMS.ConfigClient.DataAccessHandler.Interface", "Common\DIPS.AptSMS.ConfigClient.DataAccessHandler.Interface\DIPS.AptSMS.ConfigClient.DataAccessHandler.Interface.csproj", "{B429E0D5-042A-4FD6-B04B-932E7BD65C56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIPS.AptSMS.ConfigClient.DataAccessHandler.Server", "Server\DIPS.AptSMS.ConfigClient.DataAccessHandler.Server\DIPS.AptSMS.ConfigClient.DataAccessHandler.Server.csproj", "{08A63ED0-9D63-46F7-9C5D-C1271F26BAEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIPS.AptSMS.ConfigClient.DataAccessHandler.Server.DB", "Server\DIPS.AptSMS.ConfigClient.DataAccessHandler.Server.DB\DIPS.AptSMS.ConfigClient.DataAccessHandler.Server.DB.csproj", "{57B81CE7-37F6-49A0-B908-C8A7531D9031}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDIPS.AptSMS.ConfigClient.DAH.AspNetTestHelper", "Test\TestDIPS.AptSMS.ConfigClient.DataAccessHandler.AspNetTestHelper\TestDIPS.AptSMS.ConfigClient.DAH.AspNetTestHelper.csproj", "{44C7EC8C-ED0B-4506-A097-E60AF3093761}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDIPS.AptSMS.ConfigClient.DAH.IntegrationTest", "Test\TestDIPS.AptSMS.ConfigClient.DataAccessHandler\TestDIPS.AptSMS.ConfigClient.DAH.IntegrationTest.csproj", "{669C6B30-BC5A-43C5-A55C-292758D23437}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{36D955EA-FBE1-4A65-8533-2EA89E5C0F6A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Changelog.md = ..\..\..\Changelog.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4E45B74-7ADE-453A-8C1F-D2914E33C812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E45B74-7ADE-453A-8C1F-D2914E33C812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E45B74-7ADE-453A-8C1F-D2914E33C812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E45B74-7ADE-453A-8C1F-D2914E33C812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B429E0D5-042A-4FD6-B04B-932E7BD65C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B429E0D5-042A-4FD6-B04B-932E7BD65C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B429E0D5-042A-4FD6-B04B-932E7BD65C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B429E0D5-042A-4FD6-B04B-932E7BD65C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A63ED0-9D63-46F7-9C5D-C1271F26BAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A63ED0-9D63-46F7-9C5D-C1271F26BAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A63ED0-9D63-46F7-9C5D-C1271F26BAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A63ED0-9D63-46F7-9C5D-C1271F26BAEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B81CE7-37F6-49A0-B908-C8A7531D9031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B81CE7-37F6-49A0-B908-C8A7531D9031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B81CE7-37F6-49A0-B908-C8A7531D9031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B81CE7-37F6-49A0-B908-C8A7531D9031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C7EC8C-ED0B-4506-A097-E60AF3093761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C7EC8C-ED0B-4506-A097-E60AF3093761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C7EC8C-ED0B-4506-A097-E60AF3093761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C7EC8C-ED0B-4506-A097-E60AF3093761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669C6B30-BC5A-43C5-A55C-292758D23437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669C6B30-BC5A-43C5-A55C-292758D23437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669C6B30-BC5A-43C5-A55C-292758D23437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669C6B30-BC5A-43C5-A55C-292758D23437}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DC88F16-3797-4AF3-87F4-C092D9329C84}
+	EndGlobalSection
+EndGlobal

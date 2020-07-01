@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\..\..\..\output</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\..\..\..\output</OutputPath>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="DIPS.Infrastructure.Logging" Version="1.0.8" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\DIPS.AptSMS.ConfigClient.DataAccessHandler.Common\DIPS.AptSMS.ConfigClient.DataAccessHandler.Common.csproj" />
+    <ProjectReference Include="..\..\Common\DIPS.AptSMS.ConfigClient.DataAccessHandler.Interface\DIPS.AptSMS.ConfigClient.DataAccessHandler.Interface.csproj" />
+  </ItemGroup>
+
+
+  
+
+</Project>

@@ -1,0 +1,93 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+    <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\..\..\..\output</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\..\..\..\output</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DIPS.AuthenticationProvider" Version="1.0.1" />
+    <PackageReference Include="DIPS.Configuration.Client.Log4net" Version="2.3.2" />
+    <PackageReference Include="DIPS.Configuration.Client.NetStd" Version="2.3.2" />
+    <PackageReference Include="DIPS.Diagnostics.AspNetCore.HealthCheck" Version="1.1.0" />
+    <PackageReference Include="DIPS.Infrastructure.Database.OracleManaged" Version="1.4.0" />
+    <PackageReference Include="DIPS.Infrastructure.HealthCheck" Version="1.3.2" />
+    <PackageReference Include="DIPS.Infrastructure.HealthCheck.Database" Version="1.3.2" />
+    <PackageReference Include="DIPS.Infrastructure.Logging" Version="1.0.8" />
+    <PackageReference Include="DIPS.Infrastructure.Profiling.AspNetCore" Version="8.5.1" />
+    <PackageReference Include="DIPS.Infrastructure.Profiling.Database" Version="8.5.1" />
+    <PackageReference Include="DIPS.Infrastructure.Profiling.HttpClient" Version="8.5.1" />
+    <PackageReference Include="DIPS.Infrastructure.Profiling.Sink.Logging" Version="8.5.1" />
+    <PackageReference Include="DIPS.Infrastructure.Profiling.WcfClient" Version="8.5.1" />
+    <PackageReference Include="DIPS.Infrastructure.Security.Server.AspNetCore" Version="3.6.1.1" />
+    <PackageReference Include="DIPS.Infrastructure.Security.WcfClient" Version="3.5.4" />
+    <PackageReference Include="DIPS.Infrastructure.WcfClient" Version="1.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="3.0.3" />
+    <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Plugins\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\DIPS.AptSMS.ConfigClient.API.Common\DIPS.AptSMS.ConfigClient.API.Common.csproj" />
+    <ProjectReference Include="..\..\Common\DIPS.AptSMS.ConfigClient.API.Interface\DIPS.AptSMS.ConfigClient.API.Interface.csproj" />
+    <ProjectReference Include="..\DIPS.AptSMS.ConfigClient.API.Server\DIPS.AptSMS.ConfigClient.API.Server.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DIPS.AptSMS.ConfigClient.Common">
+      <HintPath>..\..\..\..\..\output\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DIPS.AptSMS.ConfigClient.Common.FormatFunction">
+      <HintPath>..\..\..\..\..\output\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.dll</HintPath>
+    </Reference>
+    <Reference Include="DIPS.AptSMS.ConfigClient.DataAccessHandler.Interface">
+      <HintPath>..\..\..\..\..\output\netstandard2.0\DIPS.AptSMS.ConfigClient.DataAccessHandler.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="DIPS.AptSMS.ConfigClient.DataAccessHandler.Server">
+      <HintPath>..\..\..\..\..\output\netstandard2.0\DIPS.AptSMS.ConfigClient.DataAccessHandler.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="DIPS.AptSMS.ConfigClient.DataAccessHandler.Server.DB">
+      <HintPath>..\..\..\..\..\output\netstandard2.0\DIPS.AptSMS.ConfigClient.DataAccessHandler.Server.DB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Controllers\Sample\booking.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

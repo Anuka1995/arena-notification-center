@@ -1,0 +1,29 @@
+.NavItem{
+    /* color: '#ffff'; */
+    text-align: 'left';
+    width: 200px;
+}
+
+.NavItem .a{
+    width: 200px;
+}
+/* SubMenu.css */
+.nav-item:hover {
+    color: rgb(167, 174, 199);
+    background: #3952c0;
+}
+.nav-item {
+    color: #8c2a2a;
+    text-align: left;
+    width: 240px;
+}
+.items-menu {
+    color: #fff;
+    background: #6d7fcc;
+    text-align: left;
+    width: 240px;
+  }
+  .menu-open {
+    background: #6d7fcc;
+    width: 240px;
+}

@@ -1,0 +1,11 @@
+D:\Repo\AppointmentSMS-Service\src\webapi\Common\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\bin\Release\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest.deps.json
+D:\Repo\AppointmentSMS-Service\src\webapi\Common\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\bin\Release\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest.dll
+D:\Repo\AppointmentSMS-Service\src\webapi\Common\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\bin\Release\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest.pdb
+D:\Repo\AppointmentSMS-Service\src\webapi\Common\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\obj\Release\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest.csprojAssemblyReference.cache
+D:\Repo\AppointmentSMS-Service\src\webapi\Common\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\obj\Release\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest.AssemblyInfoInputs.cache
+D:\Repo\AppointmentSMS-Service\src\webapi\Common\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\obj\Release\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest.AssemblyInfo.cs
+D:\Repo\AppointmentSMS-Service\src\webapi\Common\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\obj\Release\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest.dll
+D:\Repo\AppointmentSMS-Service\src\webapi\Common\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\obj\Release\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest.pdb
+D:\Repo\AppointmentSMS-Service\src\webapi\Common\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\bin\Release\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.dll
+D:\Repo\AppointmentSMS-Service\src\webapi\Common\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\bin\Release\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.pdb
+D:\Repo\AppointmentSMS-Service\src\webapi\Common\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\obj\Release\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest.csproj.CopyComplete

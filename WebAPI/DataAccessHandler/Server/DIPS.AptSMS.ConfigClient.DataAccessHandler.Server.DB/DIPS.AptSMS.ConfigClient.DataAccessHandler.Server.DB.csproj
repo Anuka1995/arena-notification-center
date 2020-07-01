@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\..\..\..\output</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\..\..\..\output</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="Dapper.Oracle" Version="1.0.2" />
+    <PackageReference Include="DIPS.Infrastructure.Database.OracleManaged" Version="1.4.0" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.18.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DIPS.AptSMS.ConfigClient.DataAccessHandler.Server\DIPS.AptSMS.ConfigClient.DataAccessHandler.Server.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DIPS.AptSMS.ConfigClient.Common">
+      <HintPath>..\..\..\..\..\output\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

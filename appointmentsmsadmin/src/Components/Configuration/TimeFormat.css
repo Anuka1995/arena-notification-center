@@ -1,0 +1,23 @@
+input[type=text]:focus{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+input[type=text]:disabled {
+    background: transparent;
+  }
+
+.noBorder{
+    background: transparent;
+    border: none;
+}
+
+.leftMargin{
+    margin-left: 10px;
+}
+
+.previewAlignments{
+    text-align: center;
+    margin-top: 8px;
+}

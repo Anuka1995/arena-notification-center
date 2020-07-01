@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.60.6" />
+    <PackageReference Include="Dapper.Oracle" Version="1.2.1" />
+    <PackageReference Include="DIPS.Infrastructure.Logging" Version="1.0.8" />
+    <PackageReference Include="DIPS.Infrastructure.WcfClient" Version="1.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.18.6" />
+    <PackageReference Include="Microsoft.NETCore.Targets" Version="3.0.0" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\DIPS.AptSMS.ConfigClient.DataAccessHandler.Common\DIPS.AptSMS.ConfigClient.DataAccessHandler.Common.csproj" />
+    <ProjectReference Include="..\..\Common\DIPS.AptSMS.ConfigClient.DataAccessHandler.Interface\DIPS.AptSMS.ConfigClient.DataAccessHandler.Interface.csproj" />
+    <ProjectReference Include="..\TestDIPS.AptSMS.ConfigClient.DataAccessHandler.AspNetTestHelper\TestDIPS.AptSMS.ConfigClient.DAH.AspNetTestHelper.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DIPS.AptSMS.ConfigClient.Common">
+      <HintPath>..\..\..\..\..\output\netstandard2.0\DIPS.AptSMS.ConfigClient.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,258 @@
+import React, { Component } from 'react';
+import { Col, FormGroup, Label, Input, Button } from 'reactstrap';
+//import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import NumericInput from 'react-numeric-input';
+<<<<<<< HEAD
+import { ExcludeOrganizationalUnits } from '../ExcludeOrganizationalUnitsModal/ExcludeOrganizationalUnits';
+import Form from 'react-bootstrap/Form'
+import { FormattedMessage } from 'react-intl';
+=======
+import Form from 'react-bootstrap/Form';
+import { FormattedMessage } from "react-intl";
+>>>>>>> LocalizationInAddRuleSet
+
+class AddRuleSet extends Component {
+  constructor(props)
+  {
+    super(props);
+    this.state={deps:[],addModalShow: false}
+  }
+  render() {
+      let addModalClose =() => this.setState({addModalShow:false})
+    return (
+      <Form>
+        {/* <Breadcrumb>
+                <Breadcrumb.Item href="#">Resultsets</Breadcrumb.Item>
+                <Breadcrumb.Item active>Add</Breadcrumb.Item>
+              </Breadcrumb> */}
+<<<<<<< HEAD
+        <FormGroup row>
+          <Label for="#" sm={2}>Department</Label>
+          <Col sm={4}>
+            <Input type="select" name="select" id="#" placeholder="Search Department Name..">
+              <option defaultValue>select Department Name...</option>
+              <option>Department 1</option>
+              <option>Department 2</option>
+              <option>Department 3</option>
+              <option>Department 4</option>
+              <option>Department 5</option>
+            </Input>
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label sm={2}>RuleSet Name</Label>
+          <Col sm={4}>
+            <Input type="email" name="#" id="#" placeholder="Ruleset Name" />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Form.Check className=" mr-4 p-3 offset-1" sm={2} type="checkbox" label={<FormattedMessage id="User.Role"></FormattedMessage>} />
+        </FormGroup>
+        <FormGroup row>
+          <Label sm={2}>From:</Label>
+          <Col sm={2}><Input
+            type="time"
+            name="#"
+            id="#"
+            placeholder="time placeholder"
+          /></Col>
+          <Label>To:</Label>
+          <Col sm={2}><Input
+            type="time"
+            name="#"
+            id="#"
+            placeholder="time placeholder"
+          /></Col>
+        </FormGroup>
+        <FormGroup row sm={{ offset: 2 }}>
+          <Label sm={2}>Ruleset validity Period</Label>
+        </FormGroup>
+
+        <FormGroup row >
+          <Label sm={2}>From:</Label>
+          <Col sm={2}><Input
+            type="date"
+            name="date"
+            id="#"
+            placeholder="date placeholder"
+          /></Col>
+          <Label >To:</Label>
+          <Col sm={2}><Input
+            type="date"
+            name="date"
+            id="#"
+            placeholder="date placeholder"
+          /></Col>
+        </FormGroup>
+
+        <FormGroup row>
+          <Label sm={2}>Send SMS before</Label>
+          <Col sm={4}>
+            <NumericInput className="form-control" min={0} />
+          </Col><Label sm={4}>days to the appointment</Label>
+        </FormGroup>
+        <FormGroup row>
+          <Label sm={2}>Ruleset expire days</Label>
+          <Col sm={4}>
+            <NumericInput className="form-control" min={0} />
+          </Col>
+        </FormGroup>
+        <FormGroup row >
+          <Label sm={2}>Send time interval</Label>
+        </FormGroup>
+        <FormGroup row>
+          <Label sm={2}>From:</Label>
+          <Col sm={2}><Input
+            type="time"
+            name="#"
+            id="#"
+            placeholder="time placeholder"
+          /></Col>
+          <Label>To:</Label>
+          <Col sm={2}><Input
+            type="time"
+            name="#"
+            id="#"
+            placeholder="time placeholder"
+          /></Col>
+        </FormGroup>
+
+        <FormGroup row>
+   
+              <Col sm={8}>
+              <Button className="bg-primary mr-4 " variant="primary" onClick={()=> this.setState({addModalShow:true})}>
+                  Select Organizational Units to Exclude
+                </Button>
+                <ExcludeOrganizationalUnits 
+              show={this.state.addModalShow}
+              onHide={addModalClose}
+              />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <div className="col text-right view-report">
+            <Button className=" mr-4 col-md-1" variant="primary" type="submit">
+              Back
+                </Button>
+            <Button className="bg-primary  col-md-1 mr-4 " variant="primary" type="submit" >
+              Save As
+                </Button>
+            <Button className="bg-primary  col-md-1 mr-4 " variant="primary" type="submit" >
+              Save
+=======
+            <FormGroup row>
+              <Label for="#" sm={2}><FormattedMessage id="Select.Department" defaultMessage="Department"/></Label>
+              <Col sm={4}>
+                  <Input type="select" name="select" id="#" placeholder="Search Department Name..">
+                  <option selected>select Department Name...</option>
+                  <option>Department 1</option>
+                  <option>Department 2</option>
+                  <option>Department 3</option>
+                  <option>Department 4</option>
+                  <option>Department 5</option>
+                  </Input>
+              </Col>
+            </FormGroup>
+            <FormGroup row>
+                <Label sm={2}><FormattedMessage id="Text.RuleSetName" defaultMessage="RuleSetName"/></Label>
+                <Col sm={4}>
+                <Input type="email" name="#" id="#" placeholder="Ruleset Name" />
+                </Col>
+            </FormGroup>
+            <FormGroup row>
+              <Form.Check className=" mr-4 p-3 offset-1" sm={2} type="checkbox" label="Validate appointment time" />
+            </FormGroup>
+            <FormGroup row>
+                <Label sm={2}><FormattedMessage id="Select.TimeFrom" defaultMessage="ValidAppointmentTimeFrom"/></Label>
+                    <Col sm={2}><Input
+                     type="time"
+                     name="#"
+                     id="#"
+                     placeholder="time placeholder"
+                    /></Col>
+                <Label><FormattedMessage id="Select.TimeTo" defaultMessage="ValidAppointmentTimeTo"/></Label>
+                    <Col sm={2}><Input
+                     type="time"
+                     name="#"
+                     id="#"
+                     placeholder="time placeholder"
+                    /></Col>
+            </FormGroup>
+            <FormGroup row sm={{ offset: 2 }}>
+                <Label sm={2}><FormattedMessage id="RulesetvalidityPeriod" defaultMessage="RulesetvalidityPeriod"/></Label>
+            </FormGroup>
+           
+            <FormGroup row sm>
+                <Label sm={2}><FormattedMessage id="Select.DateFrom" defaultMessage="RulesetvalidityPeriodFrom"/></Label>
+                    <Col sm={2}><Input
+                    type="date"
+                    name="date"
+                    id="#"
+                    placeholder="date placeholder"
+                    /></Col>
+                <Label ><FormattedMessage id="Select.DateTo" defaultMessage="RulesetvalidityPeriodTo"/></Label>
+                    <Col sm={2}><Input
+                    type="date"
+                    name="date"
+                    id="#"
+                    placeholder="date placeholder"
+                    /></Col>
+            </FormGroup>
+            
+            <FormGroup row>
+                <Label  sm={2}><FormattedMessage id="SendSMSbefore" defaultMessage="SendSMSbefore"/></Label>
+                <Col sm={4}>
+                <NumericInput className="form-control" min={0}/>
+                </Col><Label  sm={4}><FormattedMessage id="DaysToTheAppointment" defaultMessage="DaysToTheAppointment"/></Label>
+            </FormGroup>
+            <FormGroup row>
+                <Label  sm={2}><FormattedMessage id="RulesetExpireDays" defaultMessage="RulesetExpireDays"/></Label>
+                <Col sm={4}>
+                <NumericInput className="form-control" min={0}/>
+                </Col>
+            </FormGroup>
+            <FormGroup row >
+                <Label sm={2}><FormattedMessage id="SendTimeInterval" defaultMessage="SendTimeInterval"/></Label>
+            </FormGroup>
+            <FormGroup row>
+                <Label sm={2}><FormattedMessage id="Select.TimeFrom" defaultMessage="SendTimeIntervalFrom"/></Label>
+                    <Col sm={2}><Input
+                     type="time"
+                     name="#"
+                     id="#"
+                     placeholder="time placeholder"
+                    /></Col>
+                <Label><FormattedMessage id="Select.TimeTo" defaultMessage="SendTimeIntervalTo"/></Label>
+                    <Col sm={2}><Input
+                     type="time"
+                     name="#"
+                     id="#"
+                     placeholder="time placeholder"
+                    /></Col>
+            </FormGroup>
+
+            <FormGroup row>
+              <Label sm={2}><FormattedMessage id="ExcludePosts" defaultMessage="ExcludePosts"/></Label>
+              <Col sm={4}>
+                <Input type="textarea" name="text" id="exampleText" />
+              </Col>
+            </FormGroup>
+            <FormGroup row>
+              <div class="col text-right view-report">
+                <Button className=" mr-4 col-md-1" variant="primary" type="submit">
+                <FormattedMessage id="AddRuleSetBack" defaultMessage="Back"/>
+                </Button>
+                <Button className="bg-primary  col-md-1 mr-4 " variant="primary" type="submit" >
+                <FormattedMessage id="AddRuleSetSaveAs" defaultMessage="SaveAs"/>
+                </Button>
+                <Button className="bg-primary  col-md-1 mr-4 " variant="primary" type="submit" >
+                <FormattedMessage id="AddRuleSetSave" defaultMessage="Save"/>
+>>>>>>> LocalizationInAddRuleSet
+                </Button>
+          </div>
+        </FormGroup>
+      </Form>
+    )
+  }
+}
+export default AddRuleSet

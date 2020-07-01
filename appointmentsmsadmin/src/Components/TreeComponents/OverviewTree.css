@@ -1,0 +1,12 @@
+/* OverviewTree.css */
+.treeNode:hover{
+    color: blue;
+}
+
+.leafSection{
+    color: blue;
+}
+
+.no-sms {
+    color: crimson;
+}

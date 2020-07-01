@@ -1,0 +1,8 @@
+/* DynamicDataTree.css */
+.treeNode:hover{
+    color: blue;
+}
+
+.leafSection{
+    color: blue;
+}

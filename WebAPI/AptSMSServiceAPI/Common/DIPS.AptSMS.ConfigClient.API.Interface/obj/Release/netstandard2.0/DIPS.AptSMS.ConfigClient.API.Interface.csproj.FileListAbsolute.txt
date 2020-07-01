@@ -1,0 +1,9 @@
+D:\Repo\AppointmentSMS-Service\output\netstandard2.0\DIPS.AptSMS.ConfigClient.API.Interface.deps.json
+D:\Repo\AppointmentSMS-Service\output\netstandard2.0\DIPS.AptSMS.ConfigClient.API.Interface.dll
+D:\Repo\AppointmentSMS-Service\output\netstandard2.0\DIPS.AptSMS.ConfigClient.API.Interface.pdb
+D:\Repo\AppointmentSMS-Service\src\webapi\AptSMSServiceAPI\Common\DIPS.AptSMS.ConfigClient.API.Interface\obj\release\netstandard2.0\DIPS.AptSMS.ConfigClient.API.Interface.csprojAssemblyReference.cache
+D:\Repo\AppointmentSMS-Service\src\webapi\AptSMSServiceAPI\Common\DIPS.AptSMS.ConfigClient.API.Interface\obj\release\netstandard2.0\DIPS.AptSMS.ConfigClient.API.Interface.AssemblyInfoInputs.cache
+D:\Repo\AppointmentSMS-Service\src\webapi\AptSMSServiceAPI\Common\DIPS.AptSMS.ConfigClient.API.Interface\obj\release\netstandard2.0\DIPS.AptSMS.ConfigClient.API.Interface.AssemblyInfo.cs
+D:\Repo\AppointmentSMS-Service\src\webapi\AptSMSServiceAPI\Common\DIPS.AptSMS.ConfigClient.API.Interface\obj\release\netstandard2.0\DIPS.AptSMS.ConfigClient.API.Interface.csproj.CopyComplete
+D:\Repo\AppointmentSMS-Service\src\webapi\AptSMSServiceAPI\Common\DIPS.AptSMS.ConfigClient.API.Interface\obj\release\netstandard2.0\DIPS.AptSMS.ConfigClient.API.Interface.dll
+D:\Repo\AppointmentSMS-Service\src\webapi\AptSMSServiceAPI\Common\DIPS.AptSMS.ConfigClient.API.Interface\obj\release\netstandard2.0\DIPS.AptSMS.ConfigClient.API.Interface.pdb

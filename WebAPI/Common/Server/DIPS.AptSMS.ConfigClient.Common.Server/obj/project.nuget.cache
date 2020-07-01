@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "tszU7uQvoPD/JMoDhjrxsHOU2KcshS7wU8a1LtjIqCvVM8aFMgRv/RPXbec3RUgwg3vn7gJA7jm+4QWFQEbnWQ==",
+  "success": true,
+  "projectFilePath": "D:\\Repo\\AppointmentSMS-Service\\src\\WebAPI\\Common\\Server\\DIPS.AptSMS.ConfigClient.Common.Server\\DIPS.AptSMS.ConfigClient.Common.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

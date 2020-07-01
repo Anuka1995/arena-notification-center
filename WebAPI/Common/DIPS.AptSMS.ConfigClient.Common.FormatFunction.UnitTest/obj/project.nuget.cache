@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "off+avOy/mOBABVoEJeaNHTWyHj5XyhlMsoORmY709UkUMZCC3/tWay1HxwjAmLr+aNnpyx0R2oWTHD/eTJCTg==",
+  "success": true,
+  "projectFilePath": "D:\\Repo\\AppointmentSMS-Service\\src\\WebAPI\\Common\\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest\\DIPS.AptSMS.ConfigClient.Common.FormatFunction.UnitTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Anuka.S\\.nuget\\packages\\mstest.testframework\\2.0.0\\mstest.testframework.2.0.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

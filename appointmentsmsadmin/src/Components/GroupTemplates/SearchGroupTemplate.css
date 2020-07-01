@@ -1,0 +1,7 @@
+/* SearchGroupTemplate.css */
+.table thead th { 
+    position: sticky; 
+    top: 0;
+    border: 0px;
+    background-color: rgb(236, 236, 236);
+}

@@ -1,0 +1,42 @@
+import React from 'react';
+import classNames from 'classnames';
+import { Container } from 'reactstrap';
+import NavBar from './Content/NavBar';
+import AddTextTemplate from './AddTextTemplate/AddTextTemplate';
+import AddRuleSet from './AddRuleSets/AddRuleSet';
+import Error from './Error/Error'
+import Login from './Login/Login';
+import UserRole from './UserRole/UserRole';
+import ViewTags from './Tags/ViewTags';
+import { Switch, Route } from 'react-router-dom';
+
+export default props => (
+  <Container fluid className={classNames('content', { 'is-open': props.isOpen })}>
+    <NavBar toggle={props.toggle} />
+    <Switch>
+
+      <Route exact path="/" ><Login /></Route>
+      <Route exact path="/Login"><Login /></Route>
+      <Route exact path="/UserRole"><UserRole /></Route>
+      <Route exact path="/AddRuleSet"><AddRuleSet /></Route>
+      <Route exact path="/AddTextTemplate"><AddTextTemplate /></Route>
+<<<<<<< HEAD
+      <Route exact path="/AddTags"><AddTags /></Route>
+
+      {/*  <Route><Error></Error></Route> */}
+      {/*  <Route exact path="/Page-2" component={() => "Page-2"} />
+=======
+      <Route exact path="/Page-2" component={() => "Page-2"} />
+      <Route exact path="/ViewTags"><ViewTags /></Route>
+>>>>>>> sidebar changes in tags
+      <Route exact path="/page-2" component={() => "page-2"} />
+      <Route exact path="/page-3" component={() => "page-3"} /> */}
+
+      {/*  <Route exact path="/" component={() => "Hello"} />
+      <Route exact path="/about" component={() => "About"} />
+      <Route exact path="/Pages" component={() => "Pages"} />
+      <Route exact path="/faq" component={() => "FAQ"} />
+      <Route exact path="/contact" component={() => "Contact"} /> */}
+    </Switch>
+  </Container>
+)
